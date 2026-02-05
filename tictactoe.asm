@@ -1,3 +1,4 @@
+;este codigo bien insano estuvo vibecoudeado en su tiempo se arreglo gracias a romperse la cabeza y no se por que funciona igual muy probablemente la ia se lo robo de algun lado;
 data segment       
     nueva_linea db 13, 10, "$"
     
@@ -97,7 +98,7 @@ actualizar_dibujo:
     mov     bh, 0
     
     ; Comprobar si la posicion en el tablero sigue disponible
-    mov     al, ds:[bx]           ; Cargar el car·cter actual en la posicion
+    mov     al, ds:[bx]           ; Cargar el car√°cter actual en la posicion
     cmp     al, "_"               ; Compararlo con el marcador de posicion
     jne     posicion_ocupada      ; Si no es "_", la posicion esta ocupada
     
@@ -123,7 +124,7 @@ posicion_ocupada:
 
     call    imprimir
     
-    ; Limpiar AL para evitar datos inv·lidos
+    ; Limpiar AL para evitar datos inv√°lidos
     xor     al, al  
     
     ; Solicitar entrada nuevamente
@@ -395,3 +396,4 @@ fin:
 code ends
 
 end inicio
+
